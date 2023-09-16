@@ -43,7 +43,6 @@ func (ec *Client) Close() {
 func (ec *Client) Status(ctx context.Context) (
 	*RosettaTypes.BlockIdentifier,
 	int64,
-	[]*RosettaTypes.Peer,
 	*RosettaTypes.BlockIdentifier,
 	error,
 ) {
@@ -53,17 +52,11 @@ func (ec *Client) Status(ctx context.Context) (
 	bhash, _ := ec.Rpc.GetRecentBlockhash(ctx)
 	slot, _ := ec.Rpc.GetSlot(ctx)
 	slotTime, _ := ec.Rpc.GetBlockTime(ctx, uint64(slot))
-	clusterNodes, _ := ec.Rpc.GetClusterNodes(ctx)
-	var peers []*RosettaTypes.Peer
-	for _, k := range clusterNodes {
-		peers = append(peers, &RosettaTypes.Peer{PeerID: k.Pubkey})
-	}
 	return &RosettaTypes.BlockIdentifier{
 			Hash:  bhash.Blockhash,
 			Index: int64(slot),
 		},
 		convertTime(uint64(slotTime)),
-		peers,
 		&RosettaTypes.BlockIdentifier{
 			Hash:  genesis,
 			Index: int64(index),
