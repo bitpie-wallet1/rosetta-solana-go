@@ -11,7 +11,7 @@ require (
 	github.com/iancoleman/strcase v0.1.3
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/mr-tron/base58 v1.2.0
-	github.com/portto/solana-go-sdk v1.1.1
+	github.com/blocto/solana-go-sdk v1.26.0
 	github.com/spf13/cobra v1.1.1
 	github.com/teris-io/shortid v0.0.0-20201117134242-e59966efd125 // indirect
 	github.com/test-go/testify v1.1.4
@@ -27,6 +27,6 @@ require (
 
 go 1.15
 
-replace github.com/portto/solana-go-sdk => github.com/imerkle/solana-go-sdk v0.0.10
+// replace github.com/portto/solana-go-sdk => github.com/imerkle/solana-go-sdk v0.0.10
 
 //replace github.com/portto/solana-go-sdk => ../solana-go-sdk

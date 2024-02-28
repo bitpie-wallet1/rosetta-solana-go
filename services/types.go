@@ -17,9 +17,9 @@ package services
 import (
 	"context"
 
+	ss "github.com/blocto/solana-go-sdk/client"
 	"github.com/coinbase/rosetta-sdk-go/types"
 	solanago "github.com/imerkle/rosetta-solana-go/solana"
-	ss "github.com/portto/solana-go-sdk/client"
 )
 
 // Client is used by the servicers to get block

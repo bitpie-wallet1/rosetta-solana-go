@@ -20,14 +20,14 @@ import (
 	"strconv"
 	"strings"
 
+	ss "github.com/blocto/solana-go-sdk/client"
+	"github.com/blocto/solana-go-sdk/common"
+	solPTypes "github.com/blocto/solana-go-sdk/types"
 	"github.com/imerkle/rosetta-solana-go/configuration"
 	solanago "github.com/imerkle/rosetta-solana-go/solana"
 	"github.com/imerkle/rosetta-solana-go/solana/operations"
 	"github.com/mitchellh/copystructure"
 	"github.com/mr-tron/base58"
-	ss "github.com/portto/solana-go-sdk/client"
-	"github.com/portto/solana-go-sdk/common"
-	solPTypes "github.com/portto/solana-go-sdk/types"
 
 	"github.com/coinbase/rosetta-sdk-go/types"
 )

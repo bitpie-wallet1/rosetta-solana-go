@@ -3,11 +3,11 @@ package operations
 import (
 	"encoding/json"
 
+	"github.com/blocto/solana-go-sdk/assotokenprog"
 	"github.com/coinbase/rosetta-sdk-go/types"
 	solanago "github.com/imerkle/rosetta-solana-go/solana"
-	"github.com/portto/solana-go-sdk/assotokenprog"
 
-	solPTypes "github.com/portto/solana-go-sdk/types"
+	solPTypes "github.com/blocto/solana-go-sdk/types"
 )
 
 type SplAssociatedTokenAccountOperationMetadata struct {

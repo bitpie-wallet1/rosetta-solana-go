@@ -3,11 +3,11 @@ package operations
 import (
 	"encoding/json"
 
+	"github.com/blocto/solana-go-sdk/common"
+	"github.com/blocto/solana-go-sdk/sysprog"
+	solPTypes "github.com/blocto/solana-go-sdk/types"
 	"github.com/coinbase/rosetta-sdk-go/types"
 	solanago "github.com/imerkle/rosetta-solana-go/solana"
-	"github.com/portto/solana-go-sdk/common"
-	"github.com/portto/solana-go-sdk/sysprog"
-	solPTypes "github.com/portto/solana-go-sdk/types"
 )
 
 type SystemOperationMetadata struct {
